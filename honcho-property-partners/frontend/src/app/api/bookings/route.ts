@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import jwt from 'jsonwebtoken';
-import { bookings } from '../../db';
+import { bookings } from '../db';
 
 const JWT_SECRET = process.env.JWT_SECRET || 'honcho-secret-key';
 
