@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Building2, Phone, Mail, MapPin, Facebook, Instagram, Linkedin } from 'lucide-react';
+import { Phone, Mail, MapPin, Facebook, Instagram, Linkedin } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -7,15 +7,9 @@ export default function Footer() {
       <div className="container-custom py-10 md:py-16">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
           <div className="space-y-4">
-            <div className="flex items-center gap-2 md:gap-3">
-              <div className="w-10 h-10 md:w-12 md:h-12 bg-primary rounded-lg flex items-center justify-center">
-                <Building2 className="w-5 h-5 md:w-7 md:h-7 text-white" />
-              </div>
-              <div>
-                <span className="text-lg md:text-xl font-serif font-bold text-white">HONCHO</span>
-                <span className="block text-xs text-secondary">Property Partners</span>
-              </div>
-            </div>
+            <Link href="/" className="inline-block">
+              <img src="/logo.png" alt="Honcho Property Partners" className="h-10 md:h-12 w-auto" />
+            </Link>
             <p className="text-gray-400 text-sm leading-relaxed">
               Uganda&apos;s most trusted technology-driven real estate platform.
             </p>

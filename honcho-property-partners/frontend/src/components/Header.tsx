@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Menu, X, Building2 } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
 
 const navLinks = [
@@ -44,14 +44,8 @@ export default function Header() {
       <div className="border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex items-center justify-between h-16 md:h-20">
-            <Link href="/" className="flex items-center gap-2 md:gap-3">
-              <div className="w-10 h-10 md:w-12 md:h-12 bg-primary rounded-lg flex items-center justify-center">
-                <Building2 className="w-5 h-5 md:w-7 md:h-7 text-white" />
-              </div>
-              <div>
-                <span className="text-xl md:text-2xl font-serif font-bold text-primary">HONCHO</span>
-                <span className="hidden sm:block text-xs text-secondary -mt-1 tracking-wider">PROPERTY PARTNERS</span>
-              </div>
+            <Link href="/" className="flex items-center">
+              <img src="/logo.png" alt="Honcho Property Partners" className="h-10 md:h-12 w-auto" />
             </Link>
 
             <nav className="hidden lg:flex items-center gap-6">
